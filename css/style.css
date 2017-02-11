@@ -1,0 +1,109 @@
+
+body {
+    color: #312d2d;
+}
+
+ul {
+    margin: 0 auto;
+    padding: 0;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.center {
+    text-align: center;
+}
+
+.justify {
+    text-align: justify;
+}
+
+/* CORES */
+.amarelo {
+    color: #fff;
+    background-color: rgba(211,188,14, 1);
+}
+
+.azul {
+    color: #fff;
+    background-color: rgba(43,103,198, 1);
+}
+
+.verde {
+    color: #fff;
+    background-color: rgba(5,142,17, 1);
+}
+
+.logo-img > img {
+    max-height: 150px;
+    border-radius: 0px 20px;
+}
+    .logo-img > img:hover {
+        transition: 0.5s all linear;
+        border-radius: 0px 0px;
+        transform: rotateX(360deg);
+    }
+
+.lang > ul > li {
+    display: inline-block;
+    font-size: 0.8em;
+}
+
+.lang img {
+    max-height: 20px;
+}
+
+.top-links > li {
+    display: inline-block;
+}
+
+    .top-links > li > a {
+        display: block;
+        padding-right: 10px;
+        font-size: 1.1em;
+        color: #312d2d;
+        border: 0px;
+    }
+        .top-links > li > a:hover {
+            font-weight: bolder;
+            color: #000000;
+        }
+
+.left-box {
+    position: relative;
+    display: inline-block;
+    margin-right: 5%;
+}
+
+.exp {
+    position: relative;
+}
+    .exp > span {
+        display: block;
+        padding: 2% 0;
+        padding-left: 5%;
+        font-size: 1.2em;
+        border-radius: 0px 15px;
+    }
+        .exp > span:hover {
+            transition: 0.2s all linear;
+            padding-left: 15%;
+            border-radius: 15px 0px;
+            transform: rotateY(10deg);
+        }
+
+    .exp > p {
+        text-align: justify;
+    }
+
+.card-image img {
+    min-height: 150px;
+    max-height: 160px;
+}
+
+    .card-image img:hover {
+        transition: 0.5s all linear;
+        transform: rotateY(360deg);
+    }

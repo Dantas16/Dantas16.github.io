@@ -1,6 +1,10 @@
 
 body {
-    color: #312d2d;
+    font-family: 'Trebuchet MS', Arial, sans-serif, Helvetica;
+    background-image: url('../img/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 ul {
@@ -21,6 +25,19 @@ a:hover {
 }
 
 /* CORES */
+.white-back {
+    background: rgba(255,255,255, 0.9);
+}
+
+.white-font {
+    color: #fff;
+}
+
+.azul-escuro {
+    color: #fff;
+    background-color: rgba(54,71,79, 0.9);
+}
+
 .amarelo {
     color: #fff;
     background-color: rgba(211,188,14, 1);
@@ -38,13 +55,16 @@ a:hover {
 
 .logo-img > img {
     max-height: 150px;
-    border-radius: 0px 20px;
+    border-radius: 0px 0px;
 }
     .logo-img > img:hover {
         transition: 0.5s all linear;
         border-radius: 0px 0px;
-        transform: rotateX(360deg);
     }
+
+.row {
+    padding: 1% 0;
+}
 
 .lang > ul > li {
     display: inline-block;
@@ -90,8 +110,6 @@ a:hover {
         .exp > span:hover {
             transition: 0.2s all linear;
             padding-left: 15%;
-            border-radius: 15px 0px;
-            transform: rotateY(10deg);
         }
 
     .exp > p {

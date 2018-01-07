@@ -1,87 +1,138 @@
 ﻿<!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
+  <title>Gutemberg Dantas - Web Developer, Programmer</title>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
-  <title>Gutemberg Dantas - Web Developer</title>
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="css/materialize.min.css" type="text/css" rel="stylesheet" media="all"/>
-  <link href="css/style.css" type="text/css" rel="stylesheet" media="all"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+  <script defer src="https://use.fontawesome.com/releases/v5.0.2/js/all.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+      body {
+          font: 20px Montserrat, sans-serif;
+          line-height: 1.8;
+          color: #f5f6f7;
+      }
+      p {font-size: 16px;}
+      .margin {margin-bottom: 45px;}
+      .bg-1 { 
+          background-color: #1abc9c; /* Green */
+          color: #ffffff;
+      }
+      .bg-2 { 
+          background-color: #474e5d; /* Dark Blue */
+          color: #ffffff;
+      }
+      .bg-3 { 
+          background-color: #ffffff; /* White */
+          color: #555555;
+      }
+      .bg-4 { 
+          background-color: #2f2f2f; /* Black Gray */
+          color: #fff;
+      }
+      .container-fluid {
+          padding-top: 70px;
+          padding-bottom: 70px;
+      }
+      .navbar {
+          padding-top: 15px;
+          padding-bottom: 15px;
+          border: 0;
+          border-radius: 0;
+          margin-bottom: 0;
+          font-size: 12px;
+          letter-spacing: 5px;
+      }
+      .navbar-nav  li a:hover {
+          color: #1abc9c !important;
+      }
+  </style>
 </head>
 <body>
-    <header class="top">
-        <div class="row white-back">
-            <div class="container">
-                <div class="col s12 l2 center logo-img">
-                    <img class="responsive-img" src="img/gutemberg.jpg" alt="Gutemberg" />
+<!-- Navbar -->
+<nav class="navbar navbar-default">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="navbar-header">
+                    <div class="col-sm-1">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>                        
+                        </button>
+                    </div>
+                    <div class="col-xs-2 col-sm-2">
+                        <a href="#">
+                            <img src="img/flag_brazil.png" alt="Brazil" title="Brazil" witdh="50" height="30">
+                        </a>
+                    </div>
+                    <div class="col-xs-4 col-sm-8">
+                        <span style="font-size: 1.3em; color:#000;">Gutemberg Dantas</span>
+                    </div>
                 </div>
-              <div class="col s12 l8 logo-txt">
-                  <h3>Gutemberg Dantas</h3>
-                  <div class="left-box">
-                    <span><strong>< Web Developer ></strong></span><br />
-                    <a href="mailto:gti5tecnologias@gmail.com" title="Contato">
-                        <i class="tiny material-icons">email</i> gti5tecnologias@gmail.com
-                    </a>
-                  </div>
-                  <div class="left-box">
-                    <ul class="top-links">
-                        <li><a href="http://github.com/dantas16" title="Github">Github</a></li>
-                        <li><a href="https://www.linkedin.com/in/gutemberg-dantas-021891127/" title="Linkedin">Linkedin</a></li>
-                        <li><a href="mailto:gti5tecnologias@gmail.com" title="Contato">Contato</a></li>
+            </div>
+            <div class="col-sm-6">
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="cv.html" title="CV"><i class="fa fa-address-card"></i> CV</a></li>
+                        <li><a href="https://github.com/Dantas16" title="GitHub"><i class="fab fa-github"></i> Github</a></li>
+                        <li><a href="#" title="Linkedin"><i class="fab fa-linkedin"></i> Linkedin</a></li>
+                        <li><a href="#contact" title="Contact"><i class="fa fa-envelope"></i> Contact</a></li>
+                        <li><a href="#" title="Portuguese">BR</a></li>
                     </ul>
-                  </div>
-              </div>
-              <div class="col s12 l2 center lang">
-                  <ul>
-                      <li><a href="#" title="Português"><img src="img/243px-Flag_of_Brazil.svg.png" alt="Português" /></a></li>
-                      <li><a href="#" title="English">English</a></li>
-                  </ul>
-              </div>
-          </div>
-          </div>
-    </header>
-      
-      <section class="row azul-escuro">
-          <div class="container">
-            <p class="justify">
-                Desenvolvedor web desde os 17 anos, desenvolvo sites e sistemas web para empresas, embaixadas, associações e pessoas.<br />
-                Estudante de Sistemas de Informações na Unieuro - DF.&nbsp; 
-                Técnico em informática com certificado de mérito pelo IESB DF.&nbsp;
-                <br />Fluente em inglês e estudante de outros idiomas. &nbsp;Projetos e exemplos de código no <a href="http://github.com/dantas16" title="Github">Github</a>
-                <br /><b>Competências:</b> PHP OO, MVC, Java, JSP, JDBC, Servlet, JSF, Hibernate, JPA, Primefaces, nodejs, Javascript, ajax, angularjs, jquery, gulpjs, SQL, css, sass, 
-                bootstrap, materialize, html, json, xml, uml, git/svn, Linux ubuntu, apache, apache tomcat.
-            </p>
-          </div>
-      </section>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
 
-      <section class="row white-back">
-          <div class="container">
-            <h4 class="section-t"><strong>Experiência</strong></h4>
-            <div class="col s12 m4 exp">
-                <span class="amarelo"><strong>Banco do Brasil</strong></span>
-                <p>Análise e desenvolvimento de sistemas utilizando as tecnologias: Java, JSP, Servlet, JSF, Primefaces, Hibernate, JPA, Javascript, 
-                  css/sass, bootstrap, nodejs, html, php, mysql.
-                  <br/>Vice Presidência de Serviços, Infraestrutura e operações.
-                </p>
-            </div>
-            <div class="col s12 m4 exp">
-                <span class="azul"><strong>The Guide</strong></span>
-                <p>
-                Desenvolvedor responsável por manter o sistema web funcionando sem interrupções e desenvolver novas tecnologias.<br />
-                PHP, javascript, mysql, css, html, xml, json, etc.
-                </p>
-            </div>
-            <div class="col s12 m4 exp">
-                <span class="verde"><strong>Freelancer</strong></span>
-                <p>
-                Desenvolvi sites e sistemas para empresas de SP, DF e CE. Já utilizei CMS prontos como joomla e wordpress, apesar de preferir
-                criar o sistema do zero.
-                </p>
-            </div>
-          </div>
-      </section>
+<!-- First Container -->
+<div class="container-fluid bg-1 text-center">
+    <h3 class="margin">Bem vindo, Welcome, Bienvenido, Willkommen!</h3>
+    <!-- img-circle -->
+    <img src="img/webresp.png" class="img-responsive margin" style="display:inline" alt="Web Responsive" width="350" height="350">
+    <h3>Web development, computer programmer, IT passionate</h3>
 </div>
-  <!--  Scripts-->
-  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  </body>
+
+<!-- Second Container -->
+<div class="container-fluid bg-2 text-center">
+  <h3 class="margin"><i class="fa fa-user-circle"></i> About</h3>
+    <p>Hi, I am Gutemberg, web developer since I was 17 years old.<br/>
+       I develop websites, web system, intranet, e-commerce, app, etc. Also IT consultancy for companies, embassies, offices, person, etc.
+       <br/>
+       Pure Javascript, jquery, angular, react, nodejs, mobile ionic, typescript, html, css/sass, php oo, MVC, java, Servlet, JSP, JSF, Primefaces, SQL, python. <br/>Agile methodology, scrum, kanban, trello, software egineering, etc.
+       <br/><br/>
+       <a href="cv.html" class="btn btn-default btn-lg">
+           <span class="glyphicon glyphicon-search"></span> Read More
+       </a>
+    </p>
+</div>
+
+<!-- Third Container (Grid) -->
+<div class="container-fluid bg-3 text-center">    
+  <h3 class="margin"><i class="fa fa-cubes"></i> Projects</h3><br>
+  <div class="row">
+    <div class="col-sm-4">
+      <p>APP to help you to control your finances and save money. The purpose its to avoid debts, registering each expense and show how much rest available in cash to spend, like a book where you register a coffe, for example.</p>
+      <img src="img/mobileapp.png" class="img-responsive margin" style="width:100%" alt="Finance App ">
+    </div>
+    <div class="col-sm-4"> 
+      <p>School web system to control the students enrollment, grades, frequence, teacher classes, notices, etc. One place where parents can follow their son or daughter from any place.</p>
+      <img src="img/college.jpg" class="img-responsive margin" style="width:100%" alt="School App">
+    </div>
+    <div class="col-sm-4"> 
+      <p>App where people can pay for service and products from any place and send the code for someone receive personaly without money or credit card.</p>
+      <img src="img/payment.png" class="img-responsive margin" style="width:100%" alt="Payment">
+    </div>
+  </div>
+</div>
+<!-- Footer -->
+<footer class="container-fluid bg-4 text-center">
+    <p><i>If you want, you can do, the life is short to stay stopped</i></p> 
+</footer>
+</body>
 </html>
